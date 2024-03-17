@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <link href="CSS.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="JS.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="Poze/Logo_site.png" rel="icon">
+        <meta charset="utf-8">
+
+        <title>
+            Photo Editor
+        </title>
+
+    </head>
+
+    <body>
+        <audio id="ding" src="Poze/alert.wav" preload="auto"></audio>
+
+        <div class="header">
+
+            <img src="Poze/Logo pagina_2.png" style="background-color: rgb(47, 48, 47); float: left; padding: none;" height="60" width="60">
+
+                    <ul style="position:relative;">
+                        <li><a href="Home.html" target="_self"> <b> File </b> </a> 
+                        
+                        </li>
+                        <li class="dropdown"><a href="About.html" target="_self" class = "dropbtn"> <b> Edit </b> </a> 
+                            <div class="dropdown-content">
+                                <a onclick="prewittFilter()">Prewitt Filter</a>
+                                </div>
+                        </li>
+                        <li><a href="Portfolio.html" target="_self"> <b> Upload </b> </a> </li>
+                        <li><a href="Contact.html" target="_self"> <b> Contact </b> </a> </li>
+                        <li><a href="Bibliography.html" target="_self"> <b> Bibliography </b> </a> </li>
+                </ul>
+
+        </div>
+
+        <div id="left">
+
+            Upload picture using link:
+            <form onsubmit="doForm()">
+                <input type="text" id="img_link" placeholder="Link..">
+                <input type="submit" value="Submit">
+            </form>
+
+            <p style="font-size: 25px; text-align: center;"> OR </p>
+
+            Upload photo from Dog API:
+
+            <button id="UploadBtn" onclick="DogAPILoad()"> <img src="Poze/Upload.png" style="position: relative; height: 100%; width: 100%;"> </button>
+
+        </div>
+
+        <div id="mijloc">
+        <canvas id="Canvas" onclick="drawFrame()">
+
+        </canvas>
+        </div>
+
+        <div id="right">
+            Ceva
+        </div>
+
+        <div class="footer">
+            <div class="tooltip">Mesaj</div>
+            <img src="Poze/arrow-right.png" class="button" onclick="imgRotateRight()">
+            <img src="Poze/arrow-left.png" class="button" onclick="imgRotateLeft()">
+            <img src="Poze/flip.png" class="button" onclick="imgFlip()">
+            <img src="Poze/zoom-in.png" class="button" onclick="imgZoomIn()">
+            <img src="Poze/zoom-out.png" class="button" onclick="imgZoomOut()">
+        </div>
+
+    </body>
+</hmtl>

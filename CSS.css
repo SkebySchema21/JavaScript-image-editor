@@ -1,0 +1,256 @@
+body
+{
+    background-color: rgb(47, 48, 47);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+.header
+{
+    top: 0;
+	width: 100%;
+	background-color: rgb(47, 48, 47);
+	border: none;
+	text-align: center;
+	padding: 7px 27px;
+	color:white;
+	font-family: "Cambria", cursive;
+	font-size: 35;
+	position: relative;
+    display: inline-block;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.header a
+{
+  box-sizing: border-box;
+  position: relative;
+text-decoration: none;
+display: inline-block;
+border: none;
+text-align: center;
+padding: 14px 22px;
+color:white;
+font-family: "Cambria", cursive;
+font-size: 18;
+transition-duration: 0.2s;
+width:fit-content;
+height:fit-content;
+overflow: visible;
+}
+
+.header a:hover
+{
+    background-color: rgb(61, 62, 61);
+    border-radius: 4px;
+}
+
+.footer
+{
+    width: 100%;
+    height: 3%;
+}
+
+#Canvas
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    box-sizing: border-box;
+}
+
+#mijloc
+{
+  box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    height: 80%;
+    width: 70%;
+    left: 1%;
+    background-image: url('Poze/fundalCanvas.png');
+    margin-right: initial;
+    z-index: -1;
+    overflow: visible;
+}
+
+.button
+{
+    margin: 5px;
+    left: 41%;
+    position:relative;
+    background-color: rgb(47, 48, 47);
+    width: 3%;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.button:hover
+{
+    width: 3%;
+    background-color: rgb(61, 62, 61);
+}
+
+.tooltip{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    float: bottom;
+  }
+
+.button:hover .tooltip
+{
+    visibility: visible;
+}
+
+#left
+{
+    width: 15%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    overflow: visible;
+    color: #fff;
+}
+
+#right
+{
+    width: 14%;
+    float: right;
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 10px 10px;
+
+    color: #fff;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  input[type=submit] {
+    background-color: rgb(162, 153, 158);
+    color: white;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 3px;
+    position: relative;
+    left: 30%;
+  }
+
+  input[type=submit]:hover{
+    background-color: rgb(148, 137, 143);
+  }
+
+  #UploadBtn
+  {
+    background-color: rgb(162, 153, 158);
+    color: white;
+    padding: 0px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 100%;
+    position: relative;
+  }
+
+  #UploadBtn :hover
+  {
+    background-color: rgb(148, 137, 143);
+    box-sizing: border-box;
+    border-radius: 100%;
+  }
+
+
+
+  
+
+
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    overflow: visible;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: visible;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    overflow: visible;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    overflow: visible;
+  }
